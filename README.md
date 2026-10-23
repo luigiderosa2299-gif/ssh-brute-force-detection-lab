@@ -32,6 +32,8 @@ Analizzati due episodi reali trovati nei log:
 Entrambi i casi documentati in [`docs/alert-ssh-login-investigation.md`](docs/alert-ssh-login-investigation.md) con playbook di triage in 5 passaggi: identificazione → raccolta contesto → valutazione → decisione → documentazione ([`docs/triage-playbook.md`](docs/triage-playbook.md)).
 
 ### 3. Simulazione di un attacco realistico (kill chain completa)
+📄 **Evidenza tecnica completa con output reali di ogni fase**: [`docs/attack-chain-walkthrough.md`](docs/attack-chain-walkthrough.md)
+
 - **Reconnaissance**: `nmap -sV -p-` per scoprire porte e versioni dei servizi
 - **Enumeration**: `ssh2-enum-algos` per analizzare gli algoritmi crittografici supportati (confermata configurazione SSH moderna e indurita — supporto a key exchange post-quantum)
 - **Exploitation**: creato un account di test temporaneo con password debole ([`scripts/bruteforce_exploitation.py`](scripts/bruteforce_exploitation.py)), forzato con successo tramite dizionario di password comuni
