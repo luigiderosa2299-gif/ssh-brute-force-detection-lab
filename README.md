@@ -56,7 +56,9 @@ index=main host="kali*" "Failed password" earliest=0
 - [`scripts/exfiltration_simulation.py`](scripts/exfiltration_simulation.py) — simulazione di esfiltrazione dati via SFTP
 
 ### 6. Dashboard Splunk
-Costruita una dashboard con pannelli dedicati a: timeline login riusciti/falliti nel tempo, picco del brute force isolato per finestra temporale, distribuzione degli IP sorgente dei tentativi falliti (baseline vs falso positivo vs vero positivo).
+Costruita una dashboard con 4 pannelli: timeline login riusciti/falliti nel tempo, picco del brute force isolato per finestra temporale, distribuzione degli IP sorgente dei tentativi falliti (baseline vs falso positivo vs vero positivo), confronto login riusciti per utente (baseline `kali` vs account compromesso `labtest`).
+
+![Dashboard Splunk](screenshots/dashboard-1.png)
 
 ## 🧱 Ostacoli incontrati (e come li ho risolti)
 

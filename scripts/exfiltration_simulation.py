@@ -15,3 +15,4 @@ sftp.close()
 client.close()
 
 print("Exfiltration completata: file copiato sul Mac.")
+
