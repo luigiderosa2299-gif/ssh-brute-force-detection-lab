@@ -1,0 +1,4 @@
+2026-10-20 09:01:12 INFO login success user=gigi
+2026-10-20 09:02:45 INFO file read success path=/etc/hosts
+2026-10-20 09:03:10 WARNING login failed user=admin attempt=1
+2026-10-20 09:03:14 WARNING login failed user=admin attempt=2

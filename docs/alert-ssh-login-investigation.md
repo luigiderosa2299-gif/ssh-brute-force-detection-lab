@@ -1,0 +1,5 @@
+Fonte: sshd (journal, unit ssh.service) su host kali, servizio SSH in ascolto sulla porta 22
+Evidenza: 3 tentativi "Failed password" per l'utente kali tra le 11:04:26 e 11:04:38 del 21/10, da rhost=192.168.1.198, connessione chiusa in fase preauth
+Ipotesi: l'IP 192.168.1.198 è il tuo Mac, cioè la fonte abituale e legittima delle connessioni a questa VM (lo abbiamo visto nella baseline di ieri) — quindi l'ipotesi più plausibile è un test/errore di configurazione legittimo, non un attacco esterno. Se invece questo stesso pattern arrivasse da un IP mai visto prima, l'ipotesi cambierebbe radicalmente verso un tentativo di compromissione
+Priorità: bassa — fonte nota/baseline, pochi tentativi, nessuna autenticazione riuscita, nessuna anomalia di orario
+Prossima azione: nessuna escalation necessaria in questo caso; in un ambiente reale si registrerebbe comunque l'evento e si alzerebbe la soglia di attenzione solo se lo stesso pattern si ripetesse da un IP esterno alla baseline, o con volumi molto più alti (decine di tentativi in pochi secondi, tipico di brute force automatizzato)
